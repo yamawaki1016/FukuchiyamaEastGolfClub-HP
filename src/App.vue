@@ -181,6 +181,9 @@ li {
   text-align: -webkit-match-parent;
 }
 // 共通スタイル
+.bc-white {
+  background-color: white;
+}
 .fs-20 {
   font-size: 20px;
 }
@@ -196,6 +199,12 @@ li {
 .mg-section {
   margin: 48px 48px;
 }
+.mt-16 {
+  margin-top: 16px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
 .mb-32 {
   margin-bottom: 32px;
 }
@@ -205,11 +214,23 @@ li {
 .mr-24 {
   margin-right: 24px;
 }
+.mr-64 {
+  margin-right: 64px;
+}
 .ml-8 {
   margin-left: 8px;
 }
+.ml-16 {
+  margin-left: 16px;
+}
+.ml-64 {
+  margin-left: 64px;
+}
 .mrl-48px {
   margin: 0 48px;
+}
+.w-100 {
+  width: 100%;
 }
 .bold {
   font-weight: bold;
@@ -219,5 +240,11 @@ li {
 }
 .flex {
   display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.left {
+  text-align: left;
 }
 </style>

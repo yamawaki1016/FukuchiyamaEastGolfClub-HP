@@ -32,7 +32,6 @@ export default {
 /* 全体 */
 .p-operation__inner {
   background-color: rgba(0, 0, 0, 0);
-  border-bottom: 1px solid #bfecc6;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

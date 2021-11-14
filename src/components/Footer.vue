@@ -1,6 +1,6 @@
 <template>
   <div class="footer-content">
-    <div>footer</div>
+    <div>© 2021 福知山東ゴルフクラブ</div>
   </div>
 </template>
 <script>
@@ -16,5 +16,7 @@ export default {
 <style>
 .footer-content {
   background-color: darkgray;
+  padding: 16px;
+  text-align: right;
 }
 </style>
