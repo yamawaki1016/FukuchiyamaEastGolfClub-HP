@@ -16,12 +16,16 @@
       <ul class="p-index_socialList">
         <li class="p-index_socialItem">
           <a href="" target="blank">
-            <span class="icon icon-file">FaceBock</span>
+            <img
+              src="@/assets/instagrum-icon.svg"
+              alt="twitter"
+              class="h-100"
+            />
           </a>
         </li>
         <li class="p-index_socialItem">
           <a href="" target="blank">
-            <span class="icon icon-file">Twitter</span>
+            <img src="@/assets/twitter-icon.svg" alt="twitter" class="h-100" />
           </a>
         </li>
       </ul>
@@ -229,7 +233,6 @@ export default {
 }
 .p-index_social a {
   text-decoration: none;
-  background: #333;
   display: block;
   width: 100%;
   height: 100%;
