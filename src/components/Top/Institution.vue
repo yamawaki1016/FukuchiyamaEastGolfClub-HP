@@ -1,35 +1,28 @@
 <template>
-  <section class="p-index_conteiner">
-    <!-- タイトル -->
-    <div class="c-secTit -operationTit">
-      <h2 class="c-secTit__heading isActive">
-        <span class="c-secTit__en">Institution</span>
-        <span class="c-secTit__jp">施設案内</span>
-      </h2>
-    </div>
-    <!-- コンテンツ -->
-    <div class="p-operation__inner">
-      <div class="p-operation_baseWrap">
-        <InstitutionContents
-          imgName="clubhouse.jpg"
-          baseTitleText="クラブハウス"
-          descriptionText="福知山東ゴルフクラブ場のクラブハウスです。"
-        />
-        <InstitutionContents
-          imgName="golf-factory.jpg"
-          baseTitleText="ゴルフ工房"
-          descriptionText="ご自身で、クラブの改造を行っていただけます。"
-        />
+  <!-- コンテンツ -->
+  <div class="p-operation__inner">
+    <div
+      class="institution-list"
+      v-for="content in institutionContents"
+      :key="content.id"
+    >
+      <div class="institution-content">
+        <BoxColorSlide :boxText="content.baseTitleText" />
       </div>
     </div>
-  </section>
+  </div>
 </template>
 <script>
-import InstitutionContents from "@/components/Top/InstitutionContents.vue";
+import BoxColorSlide from "@/components/mixins/BoxColorSlide.vue";
 export default {
   name: "Institution",
-  components: { InstitutionContents },
-  data() {},
+  components: { BoxColorSlide },
+  data() {
+    return {};
+  },
+  props: {
+    institutionContents: Array,
+  },
   created: function () {},
   mounted: function () {},
   methods: {},
@@ -38,11 +31,15 @@ export default {
 <style>
 /* 全体 */
 .p-operation__inner {
-  background: #fff;
-  border-bottom: 1px solid #e5e5e5;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #bfecc6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .p-operation_baseWrap {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
 @media screen and (min-width: 769px) {
@@ -57,5 +54,9 @@ export default {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+}
+.institution-content {
+  text-align: center;
+  margin: 4px 4px;
 }
 </style>

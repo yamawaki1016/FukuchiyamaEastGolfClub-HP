@@ -79,7 +79,7 @@ figure {
 }
 .main {
   // flex: 1;
-  background-color: rgb(245, 235, 231);
+  background-color: rgb(233, 255, 227);
   overflow: hidden;
 }
 /** ------------------------------------- */
@@ -179,5 +179,45 @@ ul {
 li {
   display: list-item;
   text-align: -webkit-match-parent;
+}
+// 共通スタイル
+.fs-20 {
+  font-size: 20px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-48 {
+  font-size: 48px;
+}
+.mg-section {
+  margin: 48px 48px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+.mr-24 {
+  margin-right: 24px;
+}
+.ml-8 {
+  margin-left: 8px;
+}
+.mrl-48px {
+  margin: 0 48px;
+}
+.bold {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+.flex {
+  display: flex;
 }
 </style>

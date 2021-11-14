@@ -61,6 +61,7 @@ export default {
 .p-index_visualLeft {
   left: 0;
   z-index: 30;
+  background-color: salmon;
 }
 .p-index_visualLeft .p-index_visualRight {
   position: absolute;
