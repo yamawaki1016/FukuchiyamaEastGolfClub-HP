@@ -127,7 +127,7 @@ h2 {
 /* 会社概要 */
 .golfclub-info-card {
   border-radius: 20px;
-  background-color: white;
+  background-color: rgb(218, 218, 218);
   margin: 24px 36px;
   padding: 36px;
 }

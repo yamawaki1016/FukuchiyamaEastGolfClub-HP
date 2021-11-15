@@ -18,8 +18,6 @@ export default {
   },
 };
 </script>
-
-
 <style lang="scss">
 html {
   width: 100%;
@@ -79,7 +77,7 @@ figure {
 }
 .main {
   // flex: 1;
-  background-color: rgb(233, 255, 227);
+  background-color: #fff;
   overflow: hidden;
 }
 /** ------------------------------------- */
@@ -249,5 +247,8 @@ li {
 }
 .left {
   text-align: left;
+}
+.relative {
+  position: relative;
 }
 </style>
