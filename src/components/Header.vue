@@ -1,5 +1,8 @@
 <template>
   <div class="relative">
+    <div class="logo">
+      <img src="@/assets/FukuchiyamaEast_Logo.svg" />
+    </div>
     <div class="">
       <div class="menu-button">
         <img
@@ -37,6 +40,7 @@
                   </li>
                 </ul>
               </div>
+              <img src="@/assets/FukuchiyamaEast_Logo.svg" />
             </nav>
           </div>
         </div>
@@ -79,6 +83,14 @@ export default {
 };
 </script>
 <style>
+.logo {
+  position: fixed;
+  top: 8px;
+  left: 16px;
+}
+.logo img {
+  height: 80px;
+}
 .menu-icon {
   position: fixed;
   height: 48px;
@@ -116,6 +128,12 @@ export default {
 .menu-nav {
   width: 70%;
   position: relative;
+}
+.menu-nav img {
+  height: 300px;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
 }
 .menu-nav-body {
   position: absolute;

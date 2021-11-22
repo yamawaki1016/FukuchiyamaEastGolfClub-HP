@@ -15,7 +15,10 @@
     <div class="p-index_social">
       <ul class="p-index_socialList">
         <li class="p-index_socialItem">
-          <a href="" target="blank">
+          <a
+            href="https://www.instagram.com/explore/locations/258457021/"
+            target="blank"
+          >
             <img
               src="@/assets/instagrum-icon.svg"
               alt="twitter"

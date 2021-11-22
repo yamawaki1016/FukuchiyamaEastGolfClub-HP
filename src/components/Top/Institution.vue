@@ -14,9 +14,10 @@
 </template>
 <script>
 import BoxColorSlide from "@/components/mixins/BoxColorSlide.vue";
+import BoxContents from "@/components/mixins/BoxContents.vue";
 export default {
   name: "Institution",
-  components: { BoxColorSlide },
+  components: { BoxColorSlide, BoxContents },
   data() {
     return {};
   },

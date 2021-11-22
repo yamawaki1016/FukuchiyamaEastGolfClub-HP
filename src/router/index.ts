@@ -1,11 +1,23 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Top from "../views/Top.vue";
+import AdminTop from "../views/admin/adminTop.vue";
+import AdminDayReserve from "../views/admin/adminDayReserve.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "Top",
     component: Top,
+  },
+  {
+    path: "/adminTop",
+    name: "AdminTop",
+    component: AdminTop,
+  },
+  {
+    path: "/adminDayReserve",
+    name: "AdminDayReserve",
+    component: AdminDayReserve,
   },
   {
     path: "/about",
@@ -17,10 +29,12 @@ const routes: Array<RouteRecordRaw> = [
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
 ];
-
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
+  scrollBehavior() {
+    return { top: 0 };
+  },
 });
 
 export default router;

@@ -203,6 +203,12 @@ li {
 .mt-24 {
   margin-top: 24px;
 }
+.mt-32 {
+  margin-top: 32px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
 .mb-32 {
   margin-bottom: 32px;
 }
@@ -224,6 +230,9 @@ li {
 .ml-64 {
   margin-left: 64px;
 }
+.pb-16 {
+  padding-bottom: 16px;
+}
 .mrl-48px {
   margin: 0 48px;
 }
@@ -235,6 +244,9 @@ li {
 }
 .bold {
   font-weight: bold;
+}
+.left {
+  text-align: left;
 }
 .center {
   text-align: center;
@@ -250,5 +262,11 @@ li {
 }
 .relative {
   position: relative;
+}
+.border-t {
+  border-top: 1px solid;
+}
+.border-b {
+  border-bottom: 1px solid;
 }
 </style>
